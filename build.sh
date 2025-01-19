@@ -9,10 +9,10 @@ rm /etc/sddm.conf.d/virtualkbd.conf
 systemctl disable bazzite-autologin.service
 systemctl enable ublue-update.timer
 
-sudo tar -xzvf /tmp/theme/sugar-dark.tar.gz -C /usr/share/sddm/themes
+tar -xzvf /tmp/theme/sugar-dark.tar.gz -C /usr/share/sddm/themes
 
-sudo cp /temp/sddm.conf /etc/sddm.conf
+cp /temp/sddm.conf /etc/sddm.conf
 
-sudo systemctl restart sddm.service
+systemctl restart sddm.service
 
 ostree container commit
