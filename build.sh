@@ -12,17 +12,6 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf install -y tmux 
 
-# Remove the autologin to gamescope-session
-rm /etc/sddm.conf.d/steamos.conf
-
-# Remove virtual keyboard on SDDM
-# as this image is for workstations and permanently docked steamdecks
-# Uncomment the line below to remove the TOUCH keyboard from the login screen, if you remove this you WILL need a physical keyboard each time to log in.
-#rm /etc/sddm.conf.d/virtualkbd.conf
-
-# Undo some bazzite-deck specific services we do not need anymore
-systemctl disable bazzite-autologin.service
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -33,3 +22,14 @@ systemctl disable bazzite-autologin.service
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# Remove the autologin to gamescope-session
+rm /etc/sddm.conf.d/steamos.conf
+
+# Remove virtual keyboard on SDDM
+# as this image is for workstations and permanently docked steamdecks
+rm /etc/sddm.conf.d/virtualkbd.conf
+
+# Undo some bazzite-deck specific services we do not need anymore
+systemctl disable bazzite-autologin.service && \
+systemctl enable ublue-update.timer
