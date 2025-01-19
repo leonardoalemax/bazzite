@@ -11,7 +11,7 @@ systemctl enable ublue-update.timer
 
 cp -r /tmp/theme/sugar-dark /usr/share/sddm/themes/sugar-dark
 
-cp /temp/sddm.conf /etc/sddm.conf
+cp /tmp/sddm.conf /etc/sddm.conf
 
 systemctl restart sddm.service
 
