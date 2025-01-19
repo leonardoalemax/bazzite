@@ -13,6 +13,4 @@ cp -r /tmp/theme/sugar-dark /usr/share/sddm/themes/sugar-dark
 
 cp /tmp/sddm.conf /etc/sddm.conf
 
-systemctl restart sddm.service
-
 ostree container commit
