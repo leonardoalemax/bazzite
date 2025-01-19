@@ -31,5 +31,5 @@ systemctl enable podman.socket
 # rm /etc/sddm.conf.d/virtualkbd.conf
 
 # # Undo some bazzite-deck specific services we do not need anymore
-# systemctl disable bazzite-autologin.service && \
-# systemctl enable ublue-update.timer`
+systemctl disable bazzite-autologin.service
+systemctl enable ublue-update.timer
