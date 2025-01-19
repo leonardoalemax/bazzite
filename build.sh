@@ -24,11 +24,11 @@ dnf install -y tmux
 systemctl enable podman.socket
 
 # Remove the autologin to gamescope-session
-# rm /etc/sddm.conf.d/steamos.conf
+rm /etc/sddm.conf.d/steamos.conf
 
 # # Remove virtual keyboard on SDDM
 # # as this image is for workstations and permanently docked steamdecks
-# rm /etc/sddm.conf.d/virtualkbd.conf
+rm /etc/sddm.conf.d/virtualkbd.conf
 
 # # Undo some bazzite-deck specific services we do not need anymore
 systemctl disable bazzite-autologin.service
