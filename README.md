@@ -12,9 +12,9 @@ This repository is the customization layer created to meet my needs, based on th
 #### (pt)
 - Remoção do autologin no modo game, para que eu possa selecionar uma instância do desktop e do modo game no SDDM.
 - Instalação do Syncthing para sincronizar os dados com meus servidores. 
-- Adição de ferramentas de desenvolvimento: Tmux, Codium, Zsh e Oh-My-Zsh.
+- Adição de ferramentas de desenvolvimento: Tmux and Zsh.
 
 #### (en)
 - Removal of autologin in game mode, so I can select a desktop or game mode instance in SDDM.
 - Installation of Syncthing to sync data with my servers.
-- Addition of development tools: Tmux, Zsh and Oh-My-Zsh.
+- Addition of development tools: Tmux and Zsh.

@@ -12,9 +12,6 @@ dnf install -y syncthing
 
 dnf install -y zsh
 
-cd ~
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 rm /etc/sddm.conf.d/steamos.conf
 rm /etc/sddm.conf.d/virtualkbd.conf
 
