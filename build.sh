@@ -10,6 +10,9 @@ dnf install -y qt5-qtgraphicaleffects
 
 dnf install -y syncthing
 
+rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+dnf install -y codium
+
 rm /etc/sddm.conf.d/steamos.conf
 rm /etc/sddm.conf.d/virtualkbd.conf
 
