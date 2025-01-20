@@ -13,6 +13,9 @@ dnf install -y syncthing
 rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 dnf install -y codium
 
+dnf install -y zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 rm /etc/sddm.conf.d/steamos.conf
 rm /etc/sddm.conf.d/virtualkbd.conf
 
