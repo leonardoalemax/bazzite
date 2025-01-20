@@ -8,6 +8,8 @@ dnf install -y qt5-qtquickcontrols2
 dnf install -y qt5-qtquickcontrols
 dnf install -y qt5-qtgraphicaleffects
 
+dnf install -y syncthing
+
 rm /etc/sddm.conf.d/steamos.conf
 rm /etc/sddm.conf.d/virtualkbd.conf
 
